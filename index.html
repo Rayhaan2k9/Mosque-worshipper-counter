@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <h1>COVID19 MUSALLEE COUNTER:</h1>
+
+        <label for="prayers">Please select prayer:</label>
+        <select name="prayers" id="prayers" onchange="display()">
+          <option></option>
+          <option value="Fajr">Fajr</option>
+          <option value="Zohar">Zohar</option>
+          <option value="Asar">Asar</option>
+          <option value="Magrib">Magrib</option>
+          <option value="Isha">Isha</option>
+        </select>
+        <h3 id="prayerName"></h3>
+        <br><br>
+        
+        <!-- COUNTER APP HTML -->
+        <div id="counter">
+          <h2 id="count-el">0</h2>
+          <h2 id="max"></h2>
+          <button id="increment-btn" onclick="increment()">ADD</button>
+          <button id="subtract-btn" onclick="subtract()">SUBTRACT</button>
+          <button id="save-btn" onclick="save()">SAVE</button>
+          <p id="save-el">Previous entries: </p>
+          <p id="fajr">Fajr:</p>
+          <p id="zohar">Zohar:</p>
+          <p id="asar">Asar:</p>
+          <p id="magrib">Magrib:</p>
+          <p id="isha">Isha:</p>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
